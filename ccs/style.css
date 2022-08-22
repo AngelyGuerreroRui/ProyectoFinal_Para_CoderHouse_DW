@@ -1,0 +1,230 @@
+/* -------- Reseteo ---------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Rem */
+html{
+    font-size: 18px;
+}
+
+/* imagen responsive. */
+
+img{
+max-width: 100%;
+height: auto;
+}
+
+/* -------- Fondo ---------- */
+body {
+    background-image: url("..//Galeria/Fondo\ de\ pantalla.webp"); 
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+/* -------- main y lista ---------- */
+header nav ul li {
+    text-decoration: none; 
+    list-style-type: none;
+    padding: 0px;
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 0px;
+    justify-content: space-around;
+}
+
+header h2 {
+    text-decoration: none;
+    list-style-type: none;
+    font-family:'Lato', sans-serif;
+    font-size: 40px; 
+    color:#ebebab;
+    box-shadow: none;
+
+}
+
+
+.nav ul li a{
+    text-decoration: none;
+    box-shadow: none;
+    color: #ebebab;
+}
+
+main h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family:'Roboto', sans-serif;
+    box-shadow: none;
+}
+
+main h1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family:'Roboto', sans-serif;
+    box-shadow: none;
+}
+
+main {
+    font-size: 15px; 
+    font-weight: 100; 
+    color:#9b4b54; 
+    font-display:#ebebab;
+}
+
+.color {
+    color: #f22b56;
+    font-size: 20px; 
+}
+
+
+.box {
+    background: #78bd91;
+    margin: 11px;
+    overflow: hidden;
+    padding: 0px; 
+}
+
+table{
+    text-align: center;
+
+}
+
+a title {
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* menu y footer */
+
+.menu-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    color:var(--colorgeneral);
+    background-image: url ("..//Galeria/Fondo\ de\ pantalla.webp");
+    font-size: 1.5emm;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+
+
+}
+/* Grilla catalogo*/
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+/* Media query mobile */
+@media screen and (max-width:365px) {   
+.productos {
+    display: grid;
+    grid-template-columns:1fr ;
+}
+.menu-footer{
+    flex-direction: column;
+        
+}
+}
+
+/* Media query tablet */
+@media screen and (max-width:760px) {   
+.productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.menu-footer{
+    flex-direction: column;
+}
+}
+
+/* Media query desktop */
+@media screen and (max-width:761px) {   
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+}
+.menu-footer{
+    flex-direction: column;
+        
+}
+ }
+
+    /* Estilo Catalogo producto. */
+.producto{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    background-color: #78bd91;
+    gap: 20px;
+    border-radius:5px ;
+}
+
+.boton {
+    background-color: #EBEBAB;
+    border: 2px solid rgb(5, 5, 5);
+    height: 2rem;
+    border-radius: 5px;
+    padding: pointer;
+    color: black;
+
+}
+
+
+
+
+/* ----------- header, Footer-----------------*/
+
+header {
+    text-decoration: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-around;
+    background-color:#f22b56de;
+    position: sticky;
+    height: 60px;
+    width: 100%;
+    top: 0;
+}
+
+a h2{
+    text-decoration: none;
+}
+footer {
+    background-color: #f22b56;
+    position: sticky;
+    width: 100%;
+    top: 0; 
+ 
+}
+
+footer ul li a {
+    text-decoration: none;
+    box-shadow: none;
+    color:#ebebab;
+
+}
+
+
+
+
+
+
