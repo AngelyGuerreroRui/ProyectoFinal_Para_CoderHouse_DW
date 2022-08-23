@@ -118,7 +118,7 @@ a {
 /* Grilla catalogo*/
 
 .productos {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -191,15 +191,14 @@ header {
     justify-content: space-around;
     background-color: #f22b56de;
     position: sticky;
-    /*height: 60px;*/
-    /*top: 0;*/
+    height: 60px;
     width: 100%;
+    top: 0;
 }
 
 a h2 {
     text-decoration: none;
 }
-
 
 footer {
     background-color: #f22b56;
