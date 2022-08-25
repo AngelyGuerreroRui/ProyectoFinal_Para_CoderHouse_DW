@@ -36,6 +36,9 @@ header nav ul li {
     margin-left: 100px;
     margin-top: 0px;
     justify-content: space-around;
+    color: #ebebab;
+    font-size: 40px;
+
 }
 
 header h2 {
@@ -54,7 +57,6 @@ header h2 {
     color: #ebebab ;
     display: flex;
     box-shadow: none;
-    color: #ebebab;
     font-size: 40px;
 }
 
@@ -112,7 +114,10 @@ a {
  
 }
 
-
+.imagenes img {
+    width: 1000px; 
+    height:600px;
+}
 
 /* menu y footer */
 
@@ -167,7 +172,7 @@ a {
 
     .menu-footer {
         flex-direction: column;
-        display: flex
+        display: flex;
     }
 }/*
 
@@ -215,8 +220,10 @@ a {
     margin: 50px;
     padding: 10px;
     text-align: center;
-   
     
+}
+{
+
 }
 
 .boton {
@@ -265,7 +272,19 @@ footer ul li a {
 
 }
 
+footer ul label {
+    text-decoration: none;
+    box-shadow: none;
+    color: #ebebab;
+    font-size: 30px;
+
+}
+
 .menu-footer a {
     text-decoration: none;
+    box-shadow: none;
     color: #EBEBAB;
+    font-size: 30px;
 }
+
+
