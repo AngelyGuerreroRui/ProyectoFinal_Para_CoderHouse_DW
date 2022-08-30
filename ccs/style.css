@@ -2,9 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Roboto', sans-serif;
+ 
 }
 
 /* Rem */
@@ -12,279 +10,310 @@ html {
     font-size: 18px;
 }
 
-/* imagen responsive. */
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* -------- Fondo ---------- */
-body {
-    background-image: url("..//Galeria/Fondo\ de\ pantalla.webp");
+.fondo{
+    background-image: url(..//galeria/Fondo\ de\ pantalla.webp);
     background-repeat: repeat;
-    background-attachment: fixed;
+    background-attachment:fixed;
     background-size: cover;
+    
 }
 
-/* -------- main y lista ---------- */
-header nav ul li {
-    text-decoration: none;
-    list-style-type: none;
-    padding: 0px;
-    display: inline-block;
-    margin-left: 100px;
-    margin-top: 0px;
-    justify-content: space-around;
-    color: #ebebab;
-    font-size: 40px;
-
+.nav {
+    padding : 0px ;
+    margin-left: 100%;
+    
 }
 
-header h2 {
-    text-decoration: none;
-    list-style-type: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 100px;
-    color: #ebebab;
-    box-shadow: none;
+ul {
+    list-style: none;
+    display: flex;   
 }
 
+li {
+    display: block;
+    padding: 1px 20px;
 
-
-.nav ul li a {
-    text-decoration: none;
-    color: #ebebab ;
-    display: flex;
-    box-shadow: none;
-    font-size: 40px;
-}
-
-main h2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: none;
-}
-
-main h1 {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: none;
-}
-
-main {
-    font-size: 25px;
-    font-weight: 100px;
-    color: #9b4b54;
-    font-display: #ebebab;
-}
-
-.color {
-    color: #f22b56;
-    font-size: 50px;
-}
-
-.box {
-    background: #78bd91;
-    margin: 10px;
-    overflow: hidden;
-    padding: 0px;
-}
-
-table {
-    text-align: center;
-
-}
-
-a title {
-    text-align: center;
 }
 
 a {
     text-decoration: none;
+    list-style: none;
+    color: black;
+
 }
 
-.tamaño {
- margin-top: 2px;
- padding: 1%;
- text-align: center;
- 
+.inline{
+    vertical-align: top;
+    display: inline;
 }
 
-.imagenes img {
-    width: 1000px; 
-    height:600px;
-}
 
-/* menu y footer */
 
-.menu-footer {
+
+.menu-sticky {
+    box-shadow: none;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    color: var(--colorgeneral);
-    background-image: url ("..//Galeria/Fondo\ de\ pantalla.webp");
-    font-size: 1.5emm;
-    padding: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    text-decoration: none;
-}
-
-/* Grilla catalogo*/
-
-.productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    
-    
-}
-
-.contenedor {
+    background-color: #2c9fa3;
+    position: sticky;
+    height: 100%;
     width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-
+    top: 0;
 }
 
-.container-fluid {
-    width: 100%;
-    max-width: 100%;
-    
-    
-}
 
-/* Media query mobile */
-@media screen and (max-width:576px)
-{
-    .productos {
-        display: grid;
-        grid-template-columns: 1fr;
-        
+
+/* 1 columna para smartphones */
+.dispositivo  {
+    max-width: 100%;
+    display: inline-block;
     }
 
     .menu-footer {
         flex-direction: column;
         display: flex;
-    }
-}/*
-
-/* Media query tablet */
-@media screen and (max-width:992px){
-     .productos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
         
+    }
+
+/* 2 columnas para tablets */
+    @media (min-width: 420px) {
+.dispositivo  {
+    max-width: 48%;
+    }
     }
 
     .menu-footer {
         flex-direction: column;
         text-decoration: #EBEBAB;
         display: flex;
+
+    /* 4 columnas para grandes dispositivos*/
+    @media (min-width: 760px) {
+.dispositivo  {
+    max-width: 24%;
     }
-}
-
-/* Media query desktop */
-@media screen and (max-width:11200px) 
-{
-    .productos {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        
     }
-        
 
-    .menu-footer {
-        display: flex;
-    }
-}
-
-/* Estilo Catalogo producto. */
-.producto {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    width: 20rem;
-    float: left;
-    background-color: #78bd91;
-    gap: 50px;
-    border-radius: 20px;
-    margin-left: 100px;
-    margin: 50px;
-    padding: 10px;
-    text-align: center;
-    
-}
-{
-
-}
-
-.boton {
-    background-color: #EBEBAB;
-    border: 2px solid rgb(5, 5, 5);
-    height: 2rem;
-    border-radius: 5px;
-    padding: pointer;
-    color: black;
-    ;
-}
-
-/* ----------- header, Footer-----------------*/
-
-header {
-    text-decoration: none;
-    box-shadow: none;
-    display: flex;
-    justify-content: space-around;
-    background-color: #f22b56de;
-    position: sticky;
-    height: 100%;
-    top: 0;
+    /*height: 60px;*/
+    /*top: 0;
     width: 100%;
+
+/*
+* -------- previous ---------
+* {
+    margin : 0 ;
+    padding : 0 ;
+    boxsize : border box;
+    font-family : 'Lato' , sans-serif;
+    font-family : 'Roboto' , sans-serif;
 }
 
-a h2 {
-    text-decoration: none;
+/* rem
+.html {
+    font size : 18px ;
+}
 
-   
+/* sensible image.
+
+image {
+    maximum width: 100%;
+    height : automatic;
+}
+
+/* -------- Money ----------
+Body {
+    background-image : url ( "..//Gallery/Background\screen.webp" );
+    background-repeat : repeat;
+    background attachment : fixed;
+    background size : cover;
+}
+
+/* -------- main and list ----------
+navigation header ul li {
+    text decoration : none;
+    list-style-type : none;
+    padding : 0px ;
+    screen : online block;
+    left margin : 100px ;
+    margin top : 0px ;
+    justify-content : space-around;
+}
+
+header h2 {
+    text decoration : none;
+    list-style-type : none;
+    font-family : 'Lato' , sans-serif;
+    font size : 40px ;
+    color : #ebebab ; _
+    box shadow : none;
+}
+
+. nav  ul  li  a {
+    decoración de texto : ninguno;
+    sombra de caja : ninguna;
+    color :  #ebebab ; _
+}
+
+principal  h2 {
+    relleno superior :  10 px ;
+    relleno inferior :  10 px ;
+    familia de fuentes :  'Roboto' , sans-serif;
+    sombra de caja : ninguna;
+}
+
+principal  h1 {
+    alineación de texto : centro;
+    relleno superior :  10 px ;
+    relleno inferior :  10 px ;
+    familia de fuentes :  'Roboto' , sans-serif;
+    sombra de caja : ninguna;
+}
+
+principal {
+    tamaño de fuente :  15 px ;
+    peso de fuente :  100 ;
+    color :  # 9b4b54 ;
+    visualización de fuentes :  # ebebab ;
+}
+
+. color {
+    color :  # f22b56 ;
+    tamaño de fuente :  20 px ;
+}
+
+. caja {
+    fondo :  # 78bd91 ;
+    margen :  11 px ;
+    desbordamiento : oculto;
+    relleno :  0 px ;
+}
+
+mesa {
+    alineación de texto : centro;
+
+}
+
+un  título {
+    alineación de texto : centro;
+}
+
+un {
+    decoración de texto : ninguno;
+}
+
+/* menú y pie de página 
+
+. menú-pie de página {
+    pantalla : flexible;
+    dirección de flexión : fila;
+    justificar-contenido : espacio-alrededor;
+    color :  var ( -colorgeneral );
+    background-image : url( "..//Galeria/Fondo\ de\ pantalla.webp" );
+    tamaño de fuente :  1,5 emm ;
+    relleno :  1 em ;
+    margen superior :  1 em ;
+    margen inferior :  1 em ;
+    decoración de texto : ninguno;
+}
+
+/* Grilla catalogo
+
+. productos {
+    pantalla : flexible;
+    dirección de flexión : columna;
+    alinear elementos : centro;
+    justificar-contenido : centro;
+    espacio :  20 px ;
+}
+
+/* Consulta de medios móvil 
+Pantalla @media y ( ancho máximo : 365 px ) {
+    . productos {
+        pantalla : cuadrícula;
+        cuadrícula-plantilla-columnas :  1 fr ;
+    }
+
+    . menú-pie de página {
+        dirección de flexión : columna;
+    }
+}
+
+/* Tableta de consulta de medios 
+Pantalla @media y ( ancho máximo : 760 px ) {
+    . productos {
+        pantalla : cuadrícula;
+        grid-template-columns :  repetir ( 2 ,  1 fr );
+    }
+
+    . menú-pie de página {
+        dirección de flexión : columna;
+    }
+}
+
+/* Consulta de medios de escritorio 
+Pantalla @media y ( ancho máximo : 761 px ) {
+    . productos {
+        pantalla : cuadrícula;
+        grid-template-columns :  repetir ( 4 ,  1 fr );
+    }
+
+    . menú-pie de página {
+        dirección de flexión : columna;
+    }
+}
+
+/* Estilo Catálogo producto. 
+. producto {
+    pantalla : flexible;
+    dirección de flexión : columna;
+    alinear elementos : centro;
+    ancho :  20 rem ;
+    flotante : izquierda;
+    color de fondo :  # 78bd91 ;
+    espacio :  20 px ;
+    borde-radio :  5 px ;
+}
+
+. botón {
+    color de fondo :  # EBEBAB ;
+    borde :  2 px sólido rgb ( 5 ,  5 ,  5 );
+    altura :  2 rem ;
+    borde-radio :  5 px ;
+    relleno : puntero;
+    color : negro;
+}
+
+/* ----------- encabezado, pie de página-----------------
+
+encabezado {
+    decoración de texto : ninguno;
+    sombra de caja : ninguna;
+    ar-contenido : espacio-alrededor;
+    color de fondo :  # f22b56de ;
+    posición : pegajosa;
+    /*alpantalla : flexible;
+    justifictura: 60px;*/
+    /*superior: 0;
+    ancho :  100 % ;
+}
+
+un  h2 {
+    decoración de texto : ninguno;
 }
 
 
-footer {
-    background-color: #f22b56;
-    position: sticky;
-    width: 100%;
-    top: 0;
+pie de página {
+    color de fondo :  # f22b56 ;
+    posición : pegajosa;
+    ancho :  100 % ;
+    superior :  0 ;
 }
 
-footer ul li a {
-    text-decoration: none;
-    box-shadow: none;
-    color: #ebebab;
-    font-size: 30px;
+pie de página  ul  li  a {
+    decoración de texto : ninguno;
+    sombra de caja : ninguna;
+    color :  #ebebab ; _
 
 }
-
-footer ul label {
-    text-decoration: none;
-    box-shadow: none;
-    color: #ebebab;
-    font-size: 30px;
-
-}
-
-.menu-footer a {
-    text-decoration: none;
-    box-shadow: none;
-    color: #EBEBAB;
-    font-size: 30px;
-}
-
 
