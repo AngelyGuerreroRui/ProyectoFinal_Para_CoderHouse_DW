@@ -1,0 +1,162 @@
+/* -------- Reseteo ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontLato;
+    
+    &::selection  {
+        background-color: black;
+        color:$colorazul;
+    }
+  }
+/* -------- header ---------- */
+
+header{
+    background-color: $colorazul;
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+    position: sticky;
+    top: 0px;
+   
+  
+
+    .titulo{
+        font-size: 90px;
+        font-family: $fontDancing;
+        color:$coloramarillo;
+        
+        
+        
+        h1{
+            font-size: 90px;
+            font-family: $fontDancing;
+            color:$coloramarillo;
+            text-decoration: none;
+           
+            
+        }
+    }
+ 
+
+    .navbar{
+        display: flex;
+        
+        
+
+        .menu{
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+            grid-gap: 10px;
+                
+            .menu_item {
+
+                a {
+                    list-style: none;
+                    color: $coloramarillo;
+                    background: $colorazul;
+                    border: 5px solid $colorazul;
+                    color:$coloramarillo;
+                    text-decoration: none;
+                    font-size: 40px;
+                    padding: 1rem;
+                    
+
+                    &:hover{
+                        background: $coloramarillo;
+                        color: $colorazul;
+                    }
+                }
+                &:nth-child(4) {
+                    background: $coloramarillo;
+                    border-color: $coloramarillo;
+                    color:$colornegro;
+                }
+            }
+        }
+    }
+
+}
+/* -------- Main ---------- */
+.imagenfondo {
+    height: 80vh;
+    background-color: $colormostaza;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("/ProyectoFinal_Para_CoderHouse_DW/galeria/Fondo\ de\ pantalla.jpg");
+    font-size: 1.5emm;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+
+    h2{
+        color: $colornegro;
+        background-color: $colormostaza;
+        font-family: $fontLato;
+        padding-inline: 15px;
+
+        }
+      
+    }
+
+    p {
+        color: $colornegro;
+        background-color: $colormostaza;
+        font-size: 20px;
+      
+    }
+    
+
+
+
+footer {
+    background-color:$colorazul;
+    color: $coloramarillo;
+    font-size: 20px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+
+    a{
+        list-style: none;
+        color: $coloramarillo;
+        background: $colorazul;
+        color:$coloramarillo;
+        text-decoration: none;
+        padding: 1rem;
+        justify-content: space-around;
+       
+        &:hover{
+            background: $coloramarillo;
+            color: $colorazul;
+        }
+       
+        
+    }
+}
+
+
+
+/* 
+.menu-sticky 
+        box-shadow: none;
+        background-color: $colordos;
+        position: sticky;
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+
+            
+.carousel{
+        text-align: center;
+            }
+            */
+            
+            
+         
+
+            

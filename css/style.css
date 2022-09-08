@@ -1,2 +1,132 @@
+@charset "UTF-8";
+/* -------- tipografia ---------- */
+@import url("https://fonts.googleapis.com/css2? family= Lato:ital,wght@0,100;0,300;0,400;1,400;1,700 & display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Dancing+Script:wght@700 & display=swap");
+/* -------- Colores ---------- */
+/* -------- tamaños ---------- */
+.cards {
+  padding: 60px;
+  display: flex;
+  gap: 30px; }
+  .cards .card {
+    background-color: #ff8826;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1; }
+    .cards .card .informacion {
+      padding: 200px 200px 200px 200px;
+      margin: 600px 600px 600px 600px;
+      height: 150px;
+      width: 150px; }
 
+/* -------- Reseteo ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif; }
+  *::selection {
+    background-color: black;
+    color: #2c9fa3; }
 
+/* -------- header ---------- */
+header {
+  background-color: #2c9fa3;
+  display: flex;
+  gap: 20px;
+  grid-gap: 20px;
+  position: sticky;
+  top: 0px; }
+  header .titulo {
+    font-size: 90px;
+    font-family: "Dancing Script", cursiva;
+    color: #ffb914; }
+    header .titulo h1 {
+      font-size: 90px;
+      font-family: "Dancing Script", cursiva;
+      color: #ffb914;
+      text-decoration: none; }
+  header .navbar {
+    display: flex; }
+    header .navbar .menu {
+      display: flex;
+      list-style-type: none;
+      gap: 10px;
+      grid-gap: 10px; }
+      header .navbar .menu .menu_item a {
+        list-style: none;
+        color: #ffb914;
+        background: #2c9fa3;
+        border: 5px solid #2c9fa3;
+        color: #ffb914;
+        text-decoration: none;
+        font-size: 40px;
+        padding: 1rem; }
+        header .navbar .menu .menu_item a:hover {
+          background: #ffb914;
+          color: #2c9fa3; }
+      header .navbar .menu .menu_item:nth-child(4) {
+        background: #ffb914;
+        border-color: #ffb914;
+        color: black; }
+
+/* -------- Main ---------- */
+.imagenfondo {
+  height: 80vh;
+  background-color: #ff8826;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("/ProyectoFinal_Para_CoderHouse_DW/galeria/Fondo de pantalla.jpg");
+  font-size: 1.5emm;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center; }
+  .imagenfondo h2 {
+    color: black;
+    background-color: #ff8826;
+    font-family: "Lato", sans-serif;
+    padding-inline: 15px; }
+
+p {
+  color: black;
+  background-color: #ff8826;
+  font-size: 20px; }
+
+footer {
+  background-color: #2c9fa3;
+  color: #ffb914;
+  font-size: 20px;
+  position: sticky;
+  width: 100%;
+  top: 0; }
+  footer a {
+    list-style: none;
+    color: #ffb914;
+    background: #2c9fa3;
+    color: #ffb914;
+    text-decoration: none;
+    padding: 1rem;
+    justify-content: space-around; }
+    footer a:hover {
+      background: #ffb914;
+      color: #2c9fa3; }
+
+/* 
+.menu-sticky 
+        box-shadow: none;
+        background-color: $colordos;
+        position: sticky;
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+
+            
+.carousel{
+        text-align: center;
+            }
+            */

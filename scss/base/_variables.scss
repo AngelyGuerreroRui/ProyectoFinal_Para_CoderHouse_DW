@@ -1,0 +1,26 @@
+/* -------- tipografia ---------- */
+@import url('https://fonts.googleapis.com/css2? family= Lato:ital,wght@0,100;0,300;0,400;1,400;1,700 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@700 & display=swap');
+$fontLato:'Lato', sans-serif;
+$fontDancing:'Dancing Script', cursiva;
+
+/* -------- Colores ---------- */
+$coloramarillo: #ffb914;
+$colorazul: #2c9fa3;
+$colormostaza: #ff8826;
+$colornaranja: #f03813;
+$colorrojo: #b31237;
+$colornegro:black;
+$colorblanco:white;
+
+
+/* -------- tamaños ---------- */
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+

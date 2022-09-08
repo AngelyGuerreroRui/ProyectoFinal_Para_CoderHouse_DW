@@ -13,37 +13,41 @@
     <link rel="icon" href="../Galeria/favicon.png">
 
     <title> inicio </title>
-    <style>
-        .color1 {background: #ffb914;}
-        .color2 {background: #2c9fa3;}
-        .color3 {background: #ff8826;}
-        .color4 {background: #f03813;}
-        .color5 {background: #b31237;}
-      </style>
+
 </head>
 
 <!--    Cabecera   -->
 
 
-<body class="fondo">
+<body>
 
-    <header class="menu-sticky menu-footer fixed-top">
+    <header>
 
-        <div class="container">
-            <div class="row link-dark">  
-                    <h2 class="titulo"> <a class="link-dark" href="../index.html">
-                        <h2>¡Pets Friends!</h2></a></h2>
-                     <nav class="navbar bg-light">
-                      <div class="container-fluid color2">
-                        <a class="navbar-brand link-dark" href="../index.html">Inicio</a>
-                        <a class="navbar-brand link-dark" href="./galeria.html">Galeria</a>
-                        <a class="navbar-brand link-dark" href="./nosotros.html">Nosotros</a>
-                        <a class="navbar-brand link-dark" href="./contacto.html">Contacto</a>
-                        <a class="link-dark">Productos</a>
-                      </div>
-                    </nav>
-                </div>
+        <h1 class="titulo"> <a href="../index.html" style="text-decoration:none">
+                <h1>¡Pets Friends!</h1>
+            </a></h1>
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="menu_item">
+                    <a href="./galeria.html">Galeria</a>
+                </li>
+                <li class="menu_item">
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="menu_item">
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+                <li class="menu_item">
+                    <a>Productos</a>
+                </li>
+            </ul>
             </div>
+        </nav>
+        </div>
+        </div>
 
     </header>
 
@@ -57,26 +61,24 @@
             </ul>
         </div> -->
 
-    
-    <div class="container-fluid text-center color3 titulo-productos">
-        <h4>Alimentos</h4>
-    </div>
+    <section class="cards">
 
-        <div class="row productos">
-
-
-            <div class="col .img-fluid">
+        <div class="card container text-center">
+            <h4>Alimentos</h4>
+        
+        <div class="row align-items-start">
+            <div class="col card carduno informacion">
                 <img src="../Galeria/pedigree1._variacion_1240" alt=" Pedigree Adulto Etapa 2 - Carne, pollo y cereales"
                     style="width:200px; height: 300px" ;>
                 <button class="boton">$ 1.200,00 comprar</button>
             </div>
-            <div class="col .img-fluid">
+            <div class="col card carduno informacion">
                 <img src="../Galeria/PURINA-PROPLAN-SECCION-PERROS-PUPPY_2.webp"
                     alt="Alimento seco para perro PRO PLAN® Cachorro Raza Pequeña" style="width:200px; height: 300px" ;>
                 <button class="boton">$ 2.400,00 comprar</button>
             </div>
 
-            <div class="col .img-fluid">
+            <div class="col">
                 <img src="../Galeria/old-prince--novel-cordero-y-arroz-adulto-dermadefense_variacion_555"
                     alt="Old Prince Novel Cordero y Arroz Adulto" style="width:200px; height: 300px" ;>
                 <button class="boton">$ 1.800,00 comprar</button>
@@ -84,57 +86,58 @@
         </div>
     </div>
 
-    <div class="container-fluid text-center color1 titulo-productos" style="width: 100%; clear: both;">
-        <h4> Snacks </h4>
-    </div>
-    
-        <div class="row productos">
+        <div class="container text-center">
+            <h4> Snacks </h4>
+        </div>
+        <div class="row align-items-start ">
+
+        <div class="col">
+            <img src="../Galeria/111.png" alt="Alimento húmedo para perro PRO PLAN® Sensitive Skin Salmón y Arroz"
+                style="width:300px; height: 300px" ;>
+            <button class="boton">$ 200,00 comprar</button>
+        </div>
 
 
-            <div class="col .img-fluid">
-                <img src="../Galeria/111.png" alt="Alimento húmedo para perro PRO PLAN® Sensitive Skin Salmón y Arroz" style="width:300px; height: 300px" ;>
-                <button class="boton">$ 200,00 comprar</button>
-            </div>
+        <div class="col card carddos informacion">
+            <img src="../Galeria/222sin.png" alt="Golocan Bocaditos Finos De Chocolate Carne Y Pollo - 500Gr"
+                style="width:300px; height: 300px" ;>
+            <button class="boton">$ 1.400,00 comprar</button>
+        </div>
 
 
-            <div class="col .img-fluid">
-                <img src="../Galeria/222sin.png" alt="Golocan Bocaditos Finos De Chocolate Carne Y Pollo - 500Gr" style="width:300px; height: 300px" ;>
-                <button class="boton">$ 1.400,00 comprar</button>
-            </div>
+        <div class="col">
+            <td><img src="../Galeria/Huesitos.jpg.png" alt="Huesitos CanCan" style="width:300px; height: 300px" ;>
+                <button class="boton">$ 800,00 comprar</button>
+        </div>
+
+        </div>
 
 
-            <div class="col .img-fluid">
-                <td><img src="../Galeria/Huesitos.jpg.png" alt="Huesitos CanCan" style="width:300px; height: 300px" ;>
-                    <button class="boton">$ 800,00 comprar</button>
-            </div>
+        <div class="container text-center">
+            <h4> Higiene </h4>
+        </div>
+
+<div class="row align-items-start">
+
+        <div class="col">
+            <img src="../Galeria/Paño Sanitario.webp.png" alt="Paños Sanitarios Cancat 60x40 cm - 20 Unid."
+                style="width:200px; height: 300px" ;>
+            <button class="boton"> $ 2.200,00 comprar</button>
+        </div>
+
+        <div class="col">
+            <img src="../Galeria/acondicionador.webp.png" alt="acondicionador" style="width:300px; height: 300px" ;>
+            <button class="boton">$ 2.400,00 comprar</button>
+        </div>
+
+        <div class="col">
+            <img src="../Galeria/Shampoo.webp.png" alt="Shampoo Algas Vitalizador Y Abrillantador Osspret - 250 Cc"
+                style="width:300px; height: 300px" ;>
+            <button class="boton">$ 2.800,00 comprar</button>
+        </div>
         </div>
     </div>
-
-    
-    <div class="container-fluid text-center color4 titulo-productos" style="width: 100%; clear: both;">
-        <h4> Higiene </h4>
-    </div>
-
-        <div class="row productos">
-
-            <div class="col .img-fluid">
-                <img src="../Galeria/Paño Sanitario.webp.png" alt="Paños Sanitarios Cancat 60x40 cm - 20 Unid." style="width:200px; height: 300px";>
-                <button class="boton"> $ 2.200,00 comprar</button>
-            </div>
-
-            <div class="col .img-fluid">
-                <img src="../Galeria/acondicionador.webp.png" alt="acondicionador" style="width:300px; height: 300px" ;>
-                <button class="boton">$ 2.400,00 comprar</button>
-            </div>
-
-            <div class="col  .img-fluid">
-                <img src="../Galeria/Shampoo.webp.png" alt="Shampoo Algas Vitalizador Y Abrillantador Osspret - 250 Cc"
-                    style="width:300px; height: 300px" ;>
-                <button class="boton">$ 2.800,00 comprar</button>
-            </div>
-        </div>
-    </div>
-
+    </section>
 
     </Main>
     <!-- Pie -->
@@ -143,13 +146,13 @@
 
         <div class="row color1 footer container-fluid">
             <ol class="list-unstyled"><label for="">Redes:</label>
-              <li><a class="link-dark" href="https://www.facebook.com/"> facebook</a></li>
-              <li><a class="link-dark" href="https://www.instagram.com/"> Instagram</a></li>
+                <li><a class="link-dark" href="https://www.facebook.com/"> facebook</a></li>
+                <li><a class="link-dark" href="https://www.instagram.com/"> Instagram</a></li>
             </ol>
-          </div>
-    
         </div>
-      </footer>
+
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
