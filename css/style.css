@@ -89,7 +89,7 @@ header {
     font-family: "Dancing Script", cursiva;
     color: #ffb914; }
     header .titulo h1 {
-      font-size: 90px;
+      font-size: 70px;
       font-family: "Dancing Script", cursiva;
       color: #ffb914;
       text-decoration: none; }
@@ -130,7 +130,13 @@ header {
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  text-align: center; }
+  text-align: center;
+  /* Grilla catalogo*/
+  /* Media query mobile */
+  /*
+
+/* Media query tablet */
+  /* Media query desktop */ }
   .imagenfondo .mapp {
     color: #ffb914;
     background: #2c9fa3;
@@ -156,76 +162,62 @@ header {
     color: black;
     background-color: #ff8826;
     font-size: 20px; }
-    .imagenfondo p .carousel {
-      text-align: center;
-      width: 500px;
-      height: 400px;
-      padding-top: 0%; }
+  .imagenfondo .inicio_item {
+    margin: 50px;
+    padding: 40px;
+    text-align: center; }
   .imagenfondo .h3 {
     color: black;
     background-color: #ff8826;
     font-family: "Lato", sans-serif;
     padding-inline: 15px; }
-
-footer {
-  background-color: #2c9fa3;
-  color: #ffb914;
-  padding-block: 20px;
-  display: flex;
-  justify-content: space-around; }
-  footer a {
-    list-style: none;
-    text-decoration: none;
-    color: #2c9fa3; }
-    footer a:hover {
-      background: #ffb914;
+  .imagenfondo .footer {
+    background-color: #2c9fa3;
+    color: #ffb914;
+    padding-block: 20px;
+    display: flex;
+    justify-content: space-around; }
+    .imagenfondo .footer a {
+      list-style: none;
+      text-decoration: none;
       color: #2c9fa3; }
-
-/* Grilla catalogo*/
-.productos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px; }
-
-.contenedor {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto; }
-
-.container-fluid {
-  width: 100%;
-  max-width: 100%; }
-
-/* Media query mobile */
-@media screen and (max-width: 576px) {
-  .productos {
-    display: grid;
-    grid-template-columns: 1fr; }
-  .menu-footer {
+      .imagenfondo .footer a:hover {
+        background: #ffb914;
+        color: #2c9fa3; }
+  .imagenfondo .productos {
+    display: flex;
     flex-direction: column;
-    display: flex; } }
-
-/*
-
-/* Media query tablet */
-@media screen and (max-width: 992px) {
-  .productos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-  .menu-footer {
-    flex-direction: column;
-    text-decoration: #EBEBAB;
-    display: flex; } }
-
-/* Media query desktop */
-@media screen and (max-width: 1120px) {
-  .productos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); }
-  .menu-footer {
-    display: flex; } }
+    align-items: center;
+    justify-content: center;
+    gap: 20px; }
+  .imagenfondo .contenedor {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto; }
+  .imagenfondo .container-fluid {
+    width: 100%;
+    max-width: 100%; }
+  @media screen and (max-width: 576px) {
+    .imagenfondo .productos {
+      display: grid;
+      grid-template-columns: 1fr; }
+    .imagenfondo .menu-footer {
+      flex-direction: column;
+      display: flex; } }
+  @media screen and (max-width: 992px) {
+    .imagenfondo .productos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+    .imagenfondo .menu-footer {
+      flex-direction: column;
+      text-decoration: #EBEBAB;
+      display: flex; } }
+  @media screen and (max-width: 1120px) {
+    .imagenfondo .productos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); }
+    .imagenfondo .menu-footer {
+      display: flex; } }
 
 @-webkit-keyframes rotate-vert-center {
   0% {
